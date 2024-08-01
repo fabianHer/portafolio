@@ -29,14 +29,10 @@ export const Contactar = () => {
         </div>
         <div className="grid grid-cols-3 gap-4 mb-4">
           <div className="grid justify-items-end h-45">
-              <a rel="noreferrer">
                 <img src={linkedin} className="w-48 hover:w-52" alt="Linkedin" />
-              </a>
           </div>
           <div className="grid justify-center h-45">
-              <a rel="noreferrer">
                 <img src={githubIcon} className="w-48 hover:w-52" alt="GitHub" />
-              </a>
           </div>
           <div className="grid justify-star h-45">
           <a href="https://api.whatsapp.com/send/?phone=%573116204093&text=Hello+Fabian" target="_blank" rel="noreferrer">
