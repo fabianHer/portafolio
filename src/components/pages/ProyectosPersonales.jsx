@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { AppContext } from "../../context/AppContext";
 import { FaGithub, FaHtml5, FaPhp, FaReact, FaRegFolderOpen } from "react-icons/fa";
-import { IoLogoAngular, IoLogoSass } from "react-icons/io";
+import { IoLogoAngular } from "react-icons/io";
 import { SiMysql, SiTypescript } from "react-icons/si";
 import { IoOpenOutline } from "react-icons/io5";
 
@@ -9,8 +9,8 @@ export const ProyectosPersonales = () => {
   const { closeMenu } = useContext(AppContext);
 
     return (
-        <div className="p-4 sm:ml-64 bg-gray-500" onClick={closeMenu}>      
-          <div className="p-4 border-2 border-dashed rounded-lg border-gray-700"> 
+        <div className="p-4 sm:ml-64 bg-gray-500" onClick={closeMenu}>
+          <div className="p-4 border-2 border-dashed rounded-lg border-gray-700">
           <div className="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-4 mb-4">
             <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-green-500 border-2 sm:text-1xl md:text-3xl">    
                 <div className="grid grid-cols-2 m-5">
@@ -49,7 +49,7 @@ export const ProyectosPersonales = () => {
                     <FaGithub className="text-gray-400"/>
                 </div>
             </div>
-         </div> 
+         </div>
         </div>
     </div>
   );

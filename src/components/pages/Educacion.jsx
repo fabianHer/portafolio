@@ -14,15 +14,9 @@ export const Educacion = () => {
       div5: false,
       div6: false,
       div7: false
-  
+
     });
-    const abrirVentana = (divId) => {
-      setventana({
-        ...ventana,
-        [divId]: !ventana[divId]
-      });
-    };
-  
+
     return (
         <div className="p-4 sm:ml-64 bg-gray-500" onClick={closeMenu}>      
         <div className="p-4 border-2 border-dashed rounded-lg border-gray-700">    
