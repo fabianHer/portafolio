@@ -6,24 +6,14 @@ import { FaMedal, FaUniregistry } from "react-icons/fa";
 export const Educacion = () => {
 
     const { closeMenu } = useContext(AppContext);
-    const [ventana, setventana] = useState({
-      div1: false,
-      div2: false,
-      div3: false,
-      div4: false,
-      div5: false,
-      div6: false,
-      div7: false
-
-    });
 
     return (
-        <div className="p-4 sm:ml-64 bg-gray-500" onClick={closeMenu}>      
-        <div className="p-4 border-2 border-dashed rounded-lg border-gray-700">    
+        <div className="p-4 sm:ml-64 bg-gray-500" onClick={closeMenu}>
+        <div className="p-4 border-2 border-dashed rounded-lg border-gray-700">
           <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-red-500 border-2 sm:text-1xl md:text-3xl mb-3">    
             <div className="grid grid-cols-2 m-5">
-              <FaUniregistry  className="text-red-500" />   
-            </div>             
+              <FaUniregistry  className="text-red-500" />
+            </div>
                 <p className="text-4xl font-bold m-5">Universidad ECCI, Bogotá, Colombia.</p>
                 <p className="text-2xl ml-5">Ingeniero de Sistemas.</p>
                 <p className="text-sm ml-5 mb-5"><em>Jan. 2016 – May. 2020.</em></p>
