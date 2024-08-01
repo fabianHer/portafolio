@@ -3,7 +3,7 @@ import { AppContext } from "../../context/AppContext";
 import { BsFillBuildingsFill } from "react-icons/bs";
 
 export const Experiencia = () => {
-  
+
   const { closeMenu } = useContext(AppContext);
   const [ventana, setventana] = useState({
     div1: false,
@@ -23,15 +23,15 @@ export const Experiencia = () => {
   };
 
   return (
-    <div className="p-4 sm:ml-64 bg-gray-500" onClick={closeMenu}>      
-    <div className="p-4 border-2 border-dashed rounded-lg border-gray-700">    
-      <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-green-500 border-2 sm:text-1xl md:text-3xl mb-3">    
+    <div className="p-4 sm:ml-64 bg-gray-500" onClick={closeMenu}>
+    <div className="p-4 border-2 border-dashed rounded-lg border-gray-700">
+      <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-green-500 border-2 sm:text-1xl md:text-3xl mb-3">
         <div className="grid grid-cols-2 m-5">
-          <BsFillBuildingsFill className="text-green-500" />   
+          <BsFillBuildingsFill className="text-green-500" />
           <div className="grid justify-items-end">
            <span className="m-3 p-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-sm" onClick={() => abrirVentana('div1')}> {ventana.div1 ? 'Ocultar funciones': 'Ver funciones' }</span>
           </div>
-        </div>             
+        </div>
             <p className="text-2xl font-bold m-5">DataTools, Remoto, Colombia</p>
             <p className="text-sm m-5">Nov. 2022 – Actualmente <br/>
             <em> Senior Software Developer (fronted)<br/>
@@ -47,13 +47,13 @@ export const Experiencia = () => {
               <li>Utilizo prácticas de DevOps para monitoreo e implementación, mejorando la eficiencia del equipo y la calidad del software.</li>
             </ul>}
        </div>
-       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-blue-500 border-2 sm:text-1xl md:text-3xl mb-3">    
+       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-blue-500 border-2 sm:text-1xl md:text-3xl mb-3">
         <div className="grid grid-cols-2 m-5">
-          <BsFillBuildingsFill className="text-blue-500" />   
+          <BsFillBuildingsFill className="text-blue-500" />
           <div className="grid justify-items-end">
             <span className="m-3 p-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-sm" onClick={() => abrirVentana('div2')}> {ventana.div2 ? 'Ocultar funciones': 'Ver funciones' }</span>
           </div>
-        </div>             
+        </div>
             <p className="text-2xl font-bold m-5">ComWare, Hìbrido, Colombia</p>
             <p className="text-sm m-5">Ago. 2020 – Nov. 2022 <br/>
             <em> Fullstack developer<br/>
@@ -73,14 +73,14 @@ export const Experiencia = () => {
               <li>Proporcioné documentación detallada del sistema, incluidos manuales de usuario y guías de administración, para facilitar la adopción y el mantenimiento de la aplicación por parte del cliente y los usuarios finales.</li>
               <li>Utilicé Git como sistema de control de versiones para gestionar el código fuente de la aplicación, colaborando con otros desarrolladores y asegurando una integración fluida del código.</li>
             </ul>}
-       </div>      
+       </div>
        <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-yellow-500 border-2 sm:text-1xl md:text-3xl mb-3">    
         <div className="grid grid-cols-2 m-5">
-          <BsFillBuildingsFill className="text-yellow-500" />   
+          <BsFillBuildingsFill className="text-yellow-500" />
           <div className="grid justify-items-end">
             <span className="m-3 p-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-sm" onClick={() => abrirVentana('div3')}> {ventana.div3 ? 'Ocultar funciones': 'Ver funciones' }</span>
           </div>
-        </div>             
+        </div>
             <p className="text-2xl font-bold m-5">Bersoft Solutions, Presencial, Colombia</p>
             <p className="text-sm m-5">Jun. 2019 – Aug. 2020<br/>
             <em>Software Developer<br/>
@@ -95,13 +95,13 @@ export const Experiencia = () => {
               <li>Realicé pruebas exhaustivas y colaboré con el cliente para realizar ajustes y mejoras basadas en los comentarios de los usuarios y las evaluaciones de usabilidad.</li>
             </ul>}
        </div>
-       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-red-500 border-2 sm:text-1xl md:text-3xl mb-3">    
+       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-red-500 border-2 sm:text-1xl md:text-3xl mb-3">
         <div className="grid grid-cols-2 m-5">
-          <BsFillBuildingsFill className="text-red-500" />   
+          <BsFillBuildingsFill className="text-red-500" />
           <div className="grid justify-items-end">
             <span className="m-3 p-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-sm" onClick={() => abrirVentana('div4')}> {ventana.div4 ? 'Ocultar funciones': 'Ver funciones' }</span>
           </div>
-        </div>             
+        </div>
             <p className="text-2xl font-bold m-5">Softesting, Presencial, Colombia</p>
             <p className="text-sm m-5">Mar 2019 – May 2019<br/>
             <em>Automation Analyst.<br/>
@@ -112,13 +112,13 @@ export const Experiencia = () => {
              <li>Soporte y mantenimiento de aplicaciones.</li>
              </ul>}
        </div>
-       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-green-500 border-2 sm:text-1xl md:text-3xl mb-3">    
+       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-green-500 border-2 sm:text-1xl md:text-3xl mb-3">
         <div className="grid grid-cols-2 m-5">
-          <BsFillBuildingsFill className="text-green-500" />   
+          <BsFillBuildingsFill className="text-green-500" />
           <div className="grid justify-items-end">
             <span className="m-3 p-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-sm" onClick={() => abrirVentana('div5')}> {ventana.div5 ? 'Ocultar funciones': 'Ver funciones' }</span>
           </div>
-        </div>             
+        </div>
             <p className="text-2xl font-bold m-5">Quick Help, Presencial, Colombia</p>
             <p className="text-sm m-5">Ene 2018 – Mar 2019<br/>
             <em>Software Developer.<br/> Stack: JavaScript – PHP - DHTMLX – PostgreSQL - HTML - CSS </em></p>
@@ -134,13 +134,13 @@ export const Experiencia = () => {
               <li>Participé en procesos de desarrollo ágiles, incluida la planificación de sprints, reuniones diarias y reuniones retrospectivas, para entregar software de alta calidad dentro de los plazos del proyecto.</li>
              </ul>}
        </div>
-       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-blue-500 border-2 sm:text-1xl md:text-3xl mb-3">    
+       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-blue-500 border-2 sm:text-1xl md:text-3xl mb-3">
         <div className="grid grid-cols-2 m-5">
-          <BsFillBuildingsFill className="text-blue-500" />   
+          <BsFillBuildingsFill className="text-blue-500" />
           <div className="grid justify-items-end">
             <span className="m-3 p-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-sm" onClick={() => abrirVentana('div6')}> {ventana.div6 ? 'Ocultar funciones': 'Ver funciones' }</span>
           </div>
-        </div>             
+        </div>
             <p className="text-2xl font-bold m-5">SmartQuick, Presencial, Colombia</p>
             <p className="text-sm m-5">Jul 2016 – Ene 2018<br/>
             <em>Software Developer.<br/> Stack: JavaScript – PHP - DHTMLX – PostgreSQL - HTML - CSS </em></p>
@@ -156,13 +156,13 @@ export const Experiencia = () => {
               <li>Participé en procesos de desarrollo ágiles, incluida la planificación de sprints, reuniones diarias y reuniones retrospectivas, para entregar software de alta calidad dentro de los plazos del proyecto.</li>
              </ul>}
        </div>
-       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-yellow-500 border-2 sm:text-1xl md:text-3xl mb-3">    
+       <div className="rounded-tr-lg bg-gray-800 h-auto cursor-pointer text-white hover:bg-dark-gray hover:border-yellow-500 border-2 sm:text-1xl md:text-3xl mb-3">
         <div className="grid grid-cols-2 m-5">
-          <BsFillBuildingsFill className="text-yellow-500" />   
+          <BsFillBuildingsFill className="text-yellow-500" />
           <div className="grid justify-items-end">
             <span className="m-3 p-2 rounded-lg bg-blue-700 hover:bg-blue-500 text-sm" onClick={() => abrirVentana('div7')}> {ventana.div7 ? 'Ocultar funciones': 'Ver funciones' }</span>
           </div>
-        </div>             
+        </div>
             <p className="text-2xl font-bold m-5">Colcan, Presencial, Colombia</p>
             <p className="text-sm m-5">Jul 2014 – Jul 2016<br/>
             <em>Software Developer.<br/>Tecnologìas: JavaScript – Java, (MVC), - JQuery – HTML - MySQL- HTML - CSS</em></p>
