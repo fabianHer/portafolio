@@ -34,7 +34,7 @@ export const ProyectosPersonales = () => {
                 <div className="grid grid-cols-2 m-5">
                     <FaRegFolderOpen className="text-green-500" />
                     <div className="grid justify-items-end">
-                        <a  href="https://gif-expert-fabian.netlify.app" target="_blank" rel="noreferrer">
+                        <a href="https://cajeroapp.netlify.app/#/login" target="_blank" rel="noreferrer">
                            <IoOpenOutline className="text-white" />
                         </a>
                     </div>
