@@ -53,8 +53,11 @@ export const Sidebar = () => {
           <div className="flex items-center justify-center ps-2.5 mb-5">
             <img src={perfil} className="rounded-full me-3 h-40" alt="Perfil" />
           </div>
-          <div className="flex items-center ps-2.5 mb-5">
+          <div className="flex items-center justify-center ps-2.5">
             <span className="self-center text-xl font-semibold whitespace-nowrap text-white">Fabián Hernández</span>
+          </div>
+          <div className="flex items-center justify-center ps-2.5 mb-5">
+            <span className="self-center text-sm font-semibold whitespace-nowrap text-white"><em>Full Stack Developer</em></span>
           </div>
           <a href="https://www.linkedin.com/in/yilber-fabián-hernández-rincón-442618248" target="_blank"  rel="noreferrer" className="flex justify-start h-45">
             <img src={linkedin} className="w-7" alt="Linkedln" />
