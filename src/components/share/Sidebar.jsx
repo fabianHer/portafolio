@@ -61,12 +61,12 @@ export const Sidebar = () => {
             <p>Linkedln</p>
           </a>
           <div className="flex justify-start h-45">
-            <a href="https://api.whatsapp.com/send/?phone=%573116204093&text=Hello+Fabian" target="_blank" rel="noreferrer">
+            <a href="https://api.whatsapp.com/send/?phone=%573116204093&text=Hello+Fabian" target="_blank" rel="noreferrer" className="flex justify-start h-45">
               <img src={whatsapp} className="w-7" alt="WhatsApp" />
-              <p>3116204093</p>
+              <p className="text-sm">3116204093</p>
             </a>
           </div>
-          <a rel="noreferrer" target="_blank" href="https://github.com/fabianHer" className="flex justify-start h-45">
+          <a href="https://github.com/fabianHer" target="_blank" rel="noreferrer" className="flex justify-start h-45">
             <img src={githubIcon} className="w-7" alt="GitHub" />
             <p>GitHub</p>
           </a>
