@@ -5,9 +5,9 @@ import { AppRoutes } from '../routes/AppRoutes';
 export const MainContent = () => {
 
     return (
-      <>   
-        <Sidebar  />      
-        <AppRoutes />   
+      <>
+        <Sidebar  />
+        <AppRoutes />
       </>
     );
   }

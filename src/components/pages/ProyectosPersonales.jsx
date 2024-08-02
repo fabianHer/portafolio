@@ -42,8 +42,8 @@ export const ProyectosPersonales = () => {
                     <p className="text-2xl font-bold m-5">Cajero</p>
                     <p className="text-lg m-5">Aplicación que simula un cajero automático</p>
                     <p className="text-sm m-5">Datos de acceso<br/>
-                      Usuario: <em> 1234567 </em><br/>
-                      Clave:   <em> 1234567 </em>
+                      Usuario: <em> 1032344334 </em><br/>
+                      Clave:   <em> 1234 </em>
                     </p>
                 <div className="flex flex-row m-5 gap-2">
                     <IoLogoAngular className="text-red-500" />

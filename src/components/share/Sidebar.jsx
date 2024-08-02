@@ -2,18 +2,16 @@ import React, { useContext, useState } from 'react';
 import { AppContext } from '../../context/AppContext';
 import { saveAs } from 'file-saver';
 import perfil from '../../assets/perfil.jpeg';
-import Chat from '../../assets/Chat.png';
 import User from '../../assets/User.png';
-import Search from '../../assets/Search.png';
 import Chart from '../../assets/Chart.png';
-import Folder from '../../assets/Folder.png';
 import linkedin from "../../assets/linkedin.svg";
 import whatsapp from "../../assets/whatsapp.svg";
-import Setting from '../../assets/Setting.png';
 import githubIcon from "../../assets/github.svg";
 import { NavLink } from 'react-router-dom';
-import { PiTreeStructureBold } from 'react-icons/pi';
 import { FaDownload } from 'react-icons/fa';
+import { MdConnectWithoutContact, MdOutlineCastForEducation } from "react-icons/md";
+import { GiSkills } from "react-icons/gi";
+import { PiNetworkDuotone, PiShareNetworkDuotone } from "react-icons/pi";
 
 export const Sidebar = () => {
 
@@ -25,12 +23,12 @@ export const Sidebar = () => {
 
   const Menus = [
     { title: "Sobre mi", src: User, url: "/sobre-mi" },
-    { title: "Proyectos Laborales", src: Chat, url: "/proyectos" },
-    { title: "Proyectos Personales", src: Chat, url: "/proyectospersonales" },
-    { title: "Experiencia", src: Setting, gap: true, url: "/experiencia" },
+    { title: "Proyectos Laborales", icon: <PiNetworkDuotone className='text-2xl'/>, url: "/proyectos" },
+    { title: "Proyectos Personales", icon: <PiShareNetworkDuotone className='text-2xl'/>, url: "/proyectospersonales" },
+    { title: "Experiencia", icon: <GiSkills className='text-2xl'/>, gap: true, url: "/experiencia" },
     { title: "Freelance", src: Chart, url: "/freelance" },
-    { title: "Educación ", src: Search, url: "/educacion" },
-    { title: "Contactar ", src: Folder, gap: true, url: "/contactar" },
+    { title: "Educación ",  icon: <MdOutlineCastForEducation className='text-2xl'/>, url: "/educacion" },
+    { title: "Contactar ", icon: <MdConnectWithoutContact className='text-2xl'/>, gap: true, url: "/contactar" },
   ];
 
     const downloadPDF = async () => {
@@ -63,8 +61,10 @@ export const Sidebar = () => {
             <p>Linkedln</p>
           </a>
           <div className="flex justify-start h-45">
-            <img src={whatsapp} className="w-7" alt="WhatsApp" />
-            <p>3116204093</p>
+            <a href="https://api.whatsapp.com/send/?phone=%573116204093&text=Hello+Fabian" target="_blank" rel="noreferrer">
+              <img src={whatsapp} className="w-7" alt="WhatsApp" />
+              <p>3116204093</p>
+            </a>
           </div>
           <a rel="noreferrer" target="_blank" href="https://github.com/fabianHer" className="flex justify-start h-45">
             <img src={githubIcon} className="w-7" alt="GitHub" />
@@ -79,7 +79,7 @@ export const Sidebar = () => {
               className={`flex rounded-md p-2 cursor-pointer hover:bg-light-white text-gray-300 text-sm items-center gap-x-4
               ${menu.gap ? "mt-9" : "mt-2"} ${index === rutaActiva && "bg-light-white"} `}>
                  {menu.icon ? (
-                  <PiTreeStructureBold className='text-2xl'/>
+                  menu.icon
                  ) :(
                   <img src={menu.src} alt="Icono menu"/>
                  )}
