@@ -74,7 +74,7 @@ export const Educacion = () => {
                     <FaMedal  className="text-yellow-500" /> 
                 </div> 
                 <p className="text-3xl font-bold ml-5">React de cero a experto (Hooks y MERN).</p>
-                <p className="text-2xl ml-5 mb-5"><em>Udemy (en progreso).</em></p>
+                <p className="text-2xl ml-5 mb-5"><em>Udemy.</em></p>
               </div>
            </div>    
         </div>        
